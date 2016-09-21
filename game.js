@@ -10,7 +10,7 @@ gameInput.keydown(function(keydownEvent) {
     gameInput.val("");
   }  
 })
-var str = gameInput.val("");
+var str = gameInput.val();
 
 
 
