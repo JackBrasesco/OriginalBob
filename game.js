@@ -9,7 +9,7 @@ gameInput.keydown(function(keydownEvent) {
     var str = gameInput.val();
     var find = str.indexOf("color");
     console.log(find)
-    gameInput.val(
+    gameInput.val("")
   }  
 })
 
@@ -18,7 +18,7 @@ gameInput.keydown(function(keydownEvent) {
 function parseText(text) {  
   if (text === "hello") {
     gameOutput.html("Hi there!");
-  }else if(text === "Whats your favorite color?") {
+  }else if(find > 0) {
     gameOutput.html("blue");
   } else if(text === "How much do you weigh") {
     gameOutput.html("3 pounds");
