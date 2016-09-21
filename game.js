@@ -8,7 +8,7 @@ gameInput.keydown(function(keydownEvent) {
     gameInput.val();
     var str = gameInput.val();
     var find = str.indexOf("color");
-    console.log(lmao)
+    console.log(find)
     gameInput.val("")
   }  
 })
@@ -35,7 +35,8 @@ function parseText(text) {
           gameOutput.html(response);      
         } 
 
-  else gameOutput.html("What was that? Type 'help' for a list of things you can ask me!");
+  else {gameOutput.html("What was that? Type 'help' for a list of things you can ask me!");
+       }
 }
 
 var responses = ["Bot Bob!", "Bob", "My name is Bob","my name is henry vaugn bransten duex mobile chow meinington of wells, but you can call me Bob!","Barnaby Marmaduke Aloysius Benjy Cobweb Dartagnan Egbert Felix Gaspar Humbert Ignatius Jayden Kasper Leroy Maximilian Neddy Obiajulu Pepin Quilliam Rosencrantz Sexton Teddy Upwood Vivatma Wayland Xylon Yardley Zachary Usansky, just kidding... its bob"]
