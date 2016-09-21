@@ -9,6 +9,9 @@ gameInput.keydown(function(keydownEvent) {
   }  
 })
 
+var str = "blah blah color blah"
+var find = str.indexOf("color"
+
 function parseText(text) {  
   if (text === "hello") {
     gameOutput.html("Hi there!");
