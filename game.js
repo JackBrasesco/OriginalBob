@@ -4,13 +4,13 @@ gameInput.keydown(function(keydownEvent) {
   // the key code for enter is 13
 
   if (keydownEvent.keyCode == 13) {  
-    var str = gameInput;
-    var find = str.indexOf("color");
-    console.log(find)
     parseText(gameInput.val()); 
     gameInput.val("");
   }  
 })
+var str = ("blah blah blah color blah");
+var find = str.indexOf("color");
+console.log(find)
 
 
 function parseText(text) {  
