@@ -44,8 +44,5 @@ var responses = ["Bot Bob!", "Bob", "My name is Bob","my name is henry vaugn bra
 var inc = 0
 function counter() {
   inc = inc + 1;
-}
-
-console.log(inc);
-
+} 
 
