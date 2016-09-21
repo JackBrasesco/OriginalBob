@@ -5,10 +5,11 @@ gameInput.keydown(function(keydownEvent) {
 
   if (keydownEvent.keyCode == 13) {  
     parseText(gameInput.val()); 
-    gameInput.val("");
+    gameInput.val();
     var str = gameInput.val();
     var find = str.indexOf("color");
     console.log(find)
+    gameInput.val(
   }  
 })
 
