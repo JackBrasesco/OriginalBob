@@ -14,7 +14,10 @@ gameInput.keydown(function(keydownEvent) {
       gameOutput.html("My favorite color is blue")
     }
     else if (isName > 0) {
-      gameOutput.html(
+       var response
+      =responses[Math.floor(Math.random()*responses.length)];
+          gameOutput.html(response);      
+        } 
     else
     console.log(find)
     gameInput.val("")
@@ -40,10 +43,7 @@ function parseText(text) {
         } else if(text === "What's your favorite class?") {
           gameOutput.html("Anything but programming!");
         } else if(text === "what is your name") {
-          var response
-          =responses[Math.floor(Math.random()*responses.length)];
-          gameOutput.html(response);      
-        } 
+         
 
   else {gameOutput.html("What was that? Type 'help' for a list of things you can ask me!");
        }
