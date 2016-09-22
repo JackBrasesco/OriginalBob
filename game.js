@@ -8,14 +8,15 @@ gameInput.keydown(function(keydownEvent) {
     gameInput.val();
     var str = gameInput.val();
     var isColor = str.indexOf("color");
-    var isName = str.indexOf("Name");
+    var isName = str.indexOf("name");
     if (isColor > 0) {
       gameOutput.html("My favorite color is blue")
     }
     else if (isName > 0) {
-      gameOutput.htm
+      gameOutput.html(response)
+    }
     else
-    console.log(find)
+    console.log(isName)
     gameInput.val("")
   }  
 })
