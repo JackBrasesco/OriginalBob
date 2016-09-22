@@ -9,8 +9,7 @@ gameInput.keydown(function(keydownEvent) {
     var str = gameInput.val();
     var isColor = str.indexOf("color");
     var isName = str.indexOf("name");
-    var isFuck = str.indexOf("Fuck");
-    "hello world".charAt(
+    var isFuck = (str.toLowerCase()).indexOf("Fuck");
     if (isColor > 0) {
       gameOutput.html("My favorite color is blue")
     }
