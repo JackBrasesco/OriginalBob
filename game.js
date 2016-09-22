@@ -13,6 +13,8 @@ gameInput.keydown(function(keydownEvent) {
       gameOutput.html("My favorite color is blue")
     }
     else if (isName > 0) {
+      var response
+          =responses[Math.floor(Math.random()*responses.length)];
       gameOutput.html(response)
     }
     else
