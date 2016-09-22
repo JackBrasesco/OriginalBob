@@ -18,6 +18,9 @@ gameInput.keydown(function(keydownEvent) {
           =responses[Math.floor(Math.random()*responses.length)];
       gameOutput.html(response)
     }
+    else if (isFuck > 0) {
+      gameOutput.html("No thanks.")
+    }
     else {}
     console.log(isFuck)
     gameInput.val("")
