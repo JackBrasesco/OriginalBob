@@ -42,7 +42,7 @@ function parseText(text) {
     counter()
     if (inc < 3)
       gameOutput.html("Hi, how are you")
-      else gameOutput.html("ur mum") 
+      else gameOutput.html("ur mum said hi last night!!!!!") 
         } else if(text === "What's your favorite class?") {
           gameOutput.html("Anything but programming!");
         } else if(text === "what is your name") {
