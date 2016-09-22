@@ -9,7 +9,9 @@ gameInput.keydown(function(keydownEvent) {
     var str = gameInput.val();
     var find = str.indexOf("color");
     if (find > 0) {
-      gameOutput.html("My f
+      gameOutput.html("My favorite color is blue")
+    }
+    else
     console.log(find)
     gameInput.val("")
   }  
