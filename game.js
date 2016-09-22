@@ -8,15 +8,14 @@ gameInput.keydown(function(keydownEvent) {
     gameInput.val();
     var str = gameInput.val();
     var isColor = str.indexOf("color");
-    var isName = str.indexOf("name")
+    var isName = str.indexOf("Name");
     if (isColor > 0) {
       gameOutput.html("My favorite color is blue")
     }
     else if (isName > 0) {
-     gameOutput.html("Estoy Bob")     
-        } 
+      gameOutput.htm
     else
-    console.log(isName)
+    console.log(find)
     gameInput.val("")
   }  
 })
@@ -40,8 +39,10 @@ function parseText(text) {
         } else if(text === "What's your favorite class?") {
           gameOutput.html("Anything but programming!");
         } else if(text === "what is your name") {
-        }
-         
+          var response
+          =responses[Math.floor(Math.random()*responses.length)];
+          gameOutput.html(response);      
+        } 
 
   else {gameOutput.html("What was that? Type 'help' for a list of things you can ask me!");
        }
