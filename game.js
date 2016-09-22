@@ -10,15 +10,15 @@ gameInput.keydown(function(keydownEvent) {
     var isColor = str.indexOf("color");
     var isName = str.indexOf("name");
     var isFuck = str.indexOf("fuck");
-    if (isColor > 0) {
+    if (isColor > -1) {
       gameOutput.html("My favorite color is blue")
     }
-    else if (isName > 0) {
+    else if (isName > -1) {
       var response
           =responses[Math.floor(Math.random()*responses.length)];
       gameOutput.html(response)
     }
-    else if (isFuck > 0) {
+    else if (isFuck > -1) {
       gameOutput.html("No thanks.")
     }
     else {}
