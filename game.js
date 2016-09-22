@@ -8,7 +8,7 @@ gameInput.keydown(function(keydownEvent) {
     gameInput.val();
     var str = gameInput.val();
     var isColor = str.indexOf("color");
-    var isName = str.indexOf("Name")
+    var isName = str.indexOf("name")
     if (isColor > 0) {
       gameOutput.html("My favorite color is blue")
     }
@@ -16,7 +16,7 @@ gameInput.keydown(function(keydownEvent) {
      gameOutput.html("Estoy Bob")     
         } 
     else
-    console.log(find)
+    console.log(isName)
     gameInput.val("")
   }  
 })
@@ -40,6 +40,7 @@ function parseText(text) {
         } else if(text === "What's your favorite class?") {
           gameOutput.html("Anything but programming!");
         } else if(text === "what is your name") {
+        }
          
 
   else {gameOutput.html("What was that? Type 'help' for a list of things you can ask me!");
