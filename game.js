@@ -11,8 +11,14 @@ gameInput.keydown(function(keydownEvent) {
     var isName = str.indexOf("name");
     var isFuck = str.indexOf("fuck");
     var isHi = str.indexOf("hi");
+    var isAge = str.indexOf("old");
+    if (isAge > -1) {
     if (isHi > -1) {
-      gameOutput.html
+      counter()
+      if (inc < 3)
+        gameOutput.html("Hi, how are you")
+        else gameOutput.html("ur mum said hi last night!!!!!") 
+          }
     if (isColor > -1) {
       gameOutput.html("My favorite color is blue")
     }
