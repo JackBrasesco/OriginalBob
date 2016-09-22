@@ -18,7 +18,7 @@ gameInput.keydown(function(keydownEvent) {
           =responses[Math.floor(Math.random()*responses.length)];
       gameOutput.html(response)
     }
-    else
+    else {}
     console.log(isFuck)
     gameInput.val("")
   }  
