@@ -10,6 +10,9 @@ gameInput.keydown(function(keydownEvent) {
     var isColor = str.indexOf("color");
     var isName = str.indexOf("name");
     var isFuck = str.indexOf("fuck");
+    var isHi = str.indexOf("hi");
+    if (isHi > -1) {
+      gameOutput.html
     if (isColor > -1) {
       gameOutput.html("My favorite color is blue")
     }
