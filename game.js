@@ -22,6 +22,8 @@ function parseText(text) {
     gameOutput.html("blue");
   } else if(text === "How much do you weigh") {
     gameOutput.html("3 pounds");
+  } else if(text === "help") {
+    gameOutput.html("I'm not 'bob the help bot'... help ");
   } else if(text === "Hi") { 
     counter()
     if (inc < 3)
