@@ -19,7 +19,7 @@ gameInput.keydown(function(keydownEvent) {
       gameOutput.html(response)
     }
     else if (isFuck > -1) {
-      gameOutput.html("No thanks.")
+      gameOutput.html("When and where?")
     }
     else {}
     console.log(isFuck)
