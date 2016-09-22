@@ -13,6 +13,8 @@ gameInput.keydown(function(keydownEvent) {
     var isHi = str.indexOf("hi");
     var isAge = str.indexOf("old");
     if (isAge > -1) {
+      gameOutput.html("I am 13490124930492 years old")
+    }
     if (isHi > -1) {
       counter()
       if (inc < 3)
@@ -64,7 +66,7 @@ function parseText(text) {
        }
 }
 
-var responses = ["Bot Bob!", "Bob", "My name is Bob","my name is henry vaugn bransten duex mobile chow meinington of wells, but you can call me Bob!","Barnaby Marmaduke Aloysius Benjy Cobweb Dartagnan Egbert Felix Gaspar Humbert Ignatius Jayden Kasper Leroy Maximilian Neddy Obiajulu Pepin Quilliam Rosencrantz Sexton Teddy Upwood Vivatma Wayland Xylon Yardley Zachary Usansky, just kidding... its bob"]
+var responses = ["Bot Bob!", "Bob", "My name is Bob","my name is henry vaugn bransten duex mobile chow meinington of wells, but you can call me Bob!","Barnaby Marmaduke Aloysius Benjy Cobweb Dartagnan Egbert Felix Gaspar Humbert Ignatius Jayden Kasper Leroy Maximilian Neddy Obiajulu Pepin Quilliam Rosencrantz Sexton Teddy Upwood Vivatma Wayland Xylon Yardley Zachary Usansky, just kidding... its bob","Just ask ur mum!!!"]
 
 var inc = 0
 function counter() {
