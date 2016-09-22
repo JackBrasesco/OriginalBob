@@ -8,6 +8,8 @@ gameInput.keydown(function(keydownEvent) {
     gameInput.val();
     var str = gameInput.val();
     var find = str.indexOf("color");
+    if (find > 0) {
+      gameOutput.html("My f
     console.log(find)
     gameInput.val("")
   }  
@@ -23,7 +25,7 @@ function parseText(text) {
   } else if(text === "How much do you weigh") {
     gameOutput.html("3 pounds");
   } else if(text === "help") {
-    gameOutput.html("I'm not 'bob the help bot'... help ");
+    gameOutput.html("I'm not 'bob the help bot'... help thyself");
   } else if(text === "Hi") { 
     counter()
     if (inc < 3)
