@@ -6,10 +6,10 @@ gameInput.keydown(function(keydownEvent) {
   if (keydownEvent.keyCode == 13) {  
     parseText(gameInput.val()); 
     gameInput.val();
-    var str = gameInput.val();
+    var str = gameInput.val().toLowerCase();
     var isColor = str.indexOf("color");
     var isName = str.indexOf("name");
-    var isFuck = (str.toLowerCase()).indexOf("Fuck");
+    var isFuck = str.indexOf("Fuck");
     if (isColor > 0) {
       gameOutput.html("My favorite color is blue")
     }
@@ -19,7 +19,7 @@ gameInput.keydown(function(keydownEvent) {
       gameOutput.html(response)
     }
     else
-    console.log(isName)
+    console.log(isFuck)
     gameInput.val("")
   }  
 })
