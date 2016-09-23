@@ -1,6 +1,6 @@
 h1 {
   text-align: center;
-  color: black;
+  text-decoration-color: black;
   background:linear-gradient(red,orange,yellow,green, blue,indigo,violet);
   color: white;
   font-size: 50px;
