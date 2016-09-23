@@ -15,6 +15,7 @@ gameInput.keydown(function(keydownEvent) {
     var isGood = str.indexOf("good");
     if (isGood > -1) {
       gameOutput.html("That's nice... I'm good too")
+    }
     if (isAge > -1) {
       gameOutput.html("I am 13490124930492 years old")
     }
