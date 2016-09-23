@@ -38,6 +38,6 @@ b {
 }
 
 #GO {
-  : 0;
+  visibility: hidden;
   position: absolute;
   bottom:1;
