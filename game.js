@@ -81,5 +81,5 @@ function counter() {
   inc = inc + 1;
 } 
 
-$("h1")
+
 
