@@ -14,7 +14,7 @@ gameInput.keydown(function(keydownEvent) {
     var isAge = str.indexOf("old");
     var isGood = str.indexOf("good");
     var isHow = str.indexOf("how are");
-    if (isHow) {
+    if (isHow > -1) {
       gameOutput.html("IM NOT GOOD")
     }
     if (isGood > -1) {
@@ -80,4 +80,6 @@ var inc = 0
 function counter() {
   inc = inc + 1;
 } 
+
+
 
