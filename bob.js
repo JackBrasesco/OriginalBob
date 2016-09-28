@@ -2,7 +2,7 @@ var gameInput = $("#game-input");
 var gameOutput  = $("#game-output");
 gameInput.keydown(function(keydownEvent) {
   // the key code for enter is 13
-
+  console.log(gameOutput)
   if (keydownEvent.keyCode == 13) {  
     parseText(gameInput.val()); 
     gameInput.val();
@@ -14,6 +14,10 @@ gameInput.keydown(function(keydownEvent) {
     var isAge = str.indexOf("old");
     var isGood = str.indexOf("good");
     var isHow = str.indexOf("how are");
+    var isBye = str.indexOf("bye");
+    if (isBye > -1) {
+      gameOutput.html("adios!")
+    }
     if (isHow > -1) {
       gameOutput.html("IM NOT GOOD")
     }
@@ -34,7 +38,7 @@ gameInput.keydown(function(keydownEvent) {
     }
     else if (isName > -1) {
       var response
-          =responses[Math.floor(Math.random()*responses.length)];
+      =responses[Math.floor(Math.random()*responses.length)];
       gameOutput.html(response)
     }
     else if (isFuck > -1) {
