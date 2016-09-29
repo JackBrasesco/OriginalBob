@@ -15,6 +15,32 @@ gameInput.keydown(function(keydownEvent) {
     var isGood = str.indexOf("good");
     var isHow = str.indexOf("how are");
     var isBye = str.indexOf("bye");
+    var CalculateFunction = str.indexOf("/calculate")
+    if (CalculateFunction > -1) {
+      var nS = str.split("/calculate")[1];
+      var isAdd = nS.indexOf("+");
+      var isTimes = nS.indexOf("x")
+      if (isTimes > -1); {
+        console.log("2")
+        var timesSplit = nS.split("x");
+        var oneNumber = parseFloat(timesSplit[0]);
+        var twoNumber = parseFloat(timesSplit[1]);
+        var multiply = (oneNumber * twoNumber);
+        var multiplyFinal = String(multiply);
+        console.log("3")
+        gameOutput.html(multiplyFinal)
+      }
+       if (isAdd > -1); {
+        console.log("2")
+        var plusSplit = nS.split("+");
+        var firstNumber = parseFloat(plusSplit[0]);
+        var secondNumber = parseFloat(plusSplit[1]);
+        var add = (firstNumber + secondNumber);
+        var addFinal = String(add);
+        console.log("3")
+        gameOutput.html(addFinal)
+      }
+    }
     if (isBye > -1) {
       gameOutput.html("adios!")
     }
