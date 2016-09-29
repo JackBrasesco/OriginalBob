@@ -20,7 +20,17 @@ gameInput.keydown(function(keydownEvent) {
       var nS = str.split("/calculate")[1];
       var isAdd = nS.indexOf("+");
       var isTimes = nS.indexOf("x")
+      var isMinus = nS.indexOf("
       if (isTimes > -1); {
+        var timesSplit = nS.split("x");
+        var oneNumber = parseFloat(timesSplit[0]);
+        var twoNumber = parseFloat(timesSplit[1]);
+        var multiply = (oneNumber * twoNumber);
+        var multiplyFinal = String(multiply);
+        console.log("3")
+        gameOutput.html(multiplyFinal)
+      }
+      if (isMinus > -1); {
         var timesSplit = nS.split("x");
         var oneNumber = parseFloat(timesSplit[0]);
         var twoNumber = parseFloat(timesSplit[1]);
