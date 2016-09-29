@@ -21,13 +21,13 @@ gameInput.keydown(function(keydownEvent) {
       var isAdd = nS.indexOf("+");
       var isTimes = nS.indexOf("x")
       if (isTimes > -1); {
-        var plusSplit = nS.split("x");
-        var firstNumber = parseFloat(plusSplit[0]);
-        var secondNumber = parseFloat(plusSplit[1]);
-        var add = (firstNumber * secondNumber);
-        var addFinal = String(add);
+        var timesSplit = nS.split("x");
+        var oneNumber = parseFloat(timesSplit[0]);
+        var twoNumber = parseFloat(timesSplit[1]);
+        var multiply = (oneNumber * twoNumber);
+        var multiplyFinal = String(multiply);
         console.log("3")
-        gameOutput.html(addFinal)
+        gameOutput.html(multiplyFinal)
       }
        if (isAdd > -1); {
         var plusSplit = nS.split("+");
