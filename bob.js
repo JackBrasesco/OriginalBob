@@ -16,6 +16,7 @@ gameInput.keydown(function(keydownEvent) {
     var isHow = str.indexOf("how are");
     var isBye = str.indexOf("bye");
     var CalculateFunction = str.indexOf("/calculate")
+    var googleFunction = str.indexOf("/google")
     if (CalculateFunction > -1) {
       var nS = str.split("/calculate")[1];
       var isAdd = nS.indexOf("+");
