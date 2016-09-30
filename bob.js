@@ -32,9 +32,9 @@ gameInput.keydown(function(keydownEvent) {
       }
       if (isMinus > -1); {
         var minusSplit = nS.split("-");
-        var fNumber = parseFloat(minusSplit[0]);
-        var sNumber = parseFloat(minusSplit[1]);
-        var subtract = (fNumber - sNumber);
+        var fNumber = parseInt(minusSplit[0]);
+        var sNumber = parseInt(minusSplit[1]);
+        var subtract = (fNumber + sNumber);
         var subtractFinal = String(subtract);
         console.log("3")
         gameOutput.html(subtractFinal)
