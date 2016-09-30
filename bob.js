@@ -21,16 +21,16 @@ gameInput.keydown(function(keydownEvent) {
       var isAdd = nS.indexOf("+");
       var isTimes = nS.indexOf("x");
       var isMinus = nS.indexOf("-");
-      if (isTimes > -1); {
+      if (isTimes > -1) {
         var timesSplit = nS.split("x");
         var oneNumber = parseFloat(timesSplit[0]);
         var twoNumber = parseFloat(timesSplit[1]);
-        var multiply = (oneNumber * twoNumber);
-        var multiplyFinal = String(multiply);
-        console.log("3")
+        var multiply = (oneNumber * twoNumber);        
+        console.log(multiply);
+        var multiplyFinal = String(multiply);        
         gameOutput.html(multiplyFinal)
       }
-      if (isMinus > -1); {
+      if (isMinus > -1) {        
         var minusSplit = nS.split("-");
         var fNumber = parseInt(minusSplit[0]);
         var sNumber = parseInt(minusSplit[1]);
@@ -39,7 +39,7 @@ gameInput.keydown(function(keydownEvent) {
         console.log("3")
         gameOutput.html(subtractFinal)
       }
-       if (isAdd > -1); {
+       if (isAdd > -1) {         
         var plusSplit = nS.split("+");
         var firstNumber = parseFloat(plusSplit[0]);
         var secondNumber = parseFloat(plusSplit[1]);
@@ -108,7 +108,7 @@ function parseText(text) {
           gameOutput.html(response);      
         } 
 
-  else {gameOutput.html("That doesnt make any sense you sl sausage, type 'help' for a list of things that do make sense");
+  else {gameOutput.html("That doesnt make any sense  idiot, type 'help' for a list of things that do make sense");
        }
 }
 
