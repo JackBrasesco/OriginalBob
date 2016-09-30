@@ -52,11 +52,11 @@ gameInput.keydown(function(keydownEvent) {
       if (isDivide > -1) {         
         var divideSplit = nS.split("/");
         var firstoneNumber = parseFloat(divideSplit[0]);
-        var secondtwoNumber = parseFloat(plusSplit[1]);
-        var add = (firstNumber + secondNumber);
-        var addFinal = String(add);
+        var secondtwoNumber = parseFloat(divideSplit[1]);
+        var divide = (firstoneNumber / secondtwoNumber);
+        var divideFinal = String(divide);
         console.log("3")
-        gameOutput.html(addFinal)
+        gameOutput.html(divideFinal)
       }
     }
     if (isBye > -1) {
