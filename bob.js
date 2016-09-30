@@ -21,6 +21,7 @@ gameInput.keydown(function(keydownEvent) {
       var isAdd = nS.indexOf("+");
       var isTimes = nS.indexOf("x");
       var isMinus = nS.indexOf("-");
+      var isDivide =nS.indexOf("/");
       if (isTimes > -1) {
         var timesSplit = nS.split("x");
         var oneNumber = parseFloat(timesSplit[0]);
@@ -43,6 +44,15 @@ gameInput.keydown(function(keydownEvent) {
         var plusSplit = nS.split("+");
         var firstNumber = parseFloat(plusSplit[0]);
         var secondNumber = parseFloat(plusSplit[1]);
+        var add = (firstNumber + secondNumber);
+        var addFinal = String(add);
+        console.log("3")
+        gameOutput.html(addFinal)
+      }
+      if (isDivide > -1) {         
+        var divideSplit = nS.split("/");
+        var firstoneNumber = parseFloat(divideSplit[0]);
+        var secondtwoNumber = parseFloat(plusSplit[1]);
         var add = (firstNumber + secondNumber);
         var addFinal = String(add);
         console.log("3")
