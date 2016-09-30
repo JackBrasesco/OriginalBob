@@ -108,7 +108,7 @@ function parseText(text) {
           gameOutput.html(response);      
         } 
 
-  else {gameOutput.html("What was that? Type 'help' for a list of things you can ask me!");
+  else {gameOutput.html("That doesnt make any sense you sl sausage, type 'help' for a list of things that do make sense");
        }
 }
 
