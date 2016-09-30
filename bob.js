@@ -17,7 +17,9 @@ gameInput.keydown(function(keydownEvent) {
     var isBye = str.indexOf("bye");
     var isBob = str.indexOf("bob");
     var isWorking = str.indexOf("working");
-    if (isWorking > -1
+    if (isWorking > -1) {
+      gameOutput.html("yes")
+    }
     if (isBob > -1) {
       gameOutput.html("that is my name, don't wear it out")
     }
