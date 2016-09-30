@@ -16,7 +16,11 @@ gameInput.keydown(function(keydownEvent) {
     var isHow = str.indexOf("how are");
     var isBye = str.indexOf("bye");
     var isBob = str.indexOf("bob");
-    if (isBob > -1) 
+    var isWorking = str.indexOf("working");
+    if (isWorking > -1
+    if (isBob > -1) {
+      gameOutput.html("that is my name, don't wear it out")
+    }
     var CalculateFunction = str.indexOf("/calculate")
     var googleFunction = str.indexOf("/google")
     if (googleFunction > -1) {
