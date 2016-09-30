@@ -34,10 +34,10 @@ gameInput.keydown(function(keydownEvent) {
         var minusSplit = nS.split("-");
         var fNumber = parseFloat(minusSplit[0]);
         var sNumber = parseFloat(minusSplit[1]);
-        var multiply = (fNumberNumber * twoNumber);
-        var multiplyFinal = String(multiply);
+        var subtract = (fNumber * sNumber);
+        var subtractFinal = String(subtract);
         console.log("3")
-        gameOutput.html(multiplyFinal)
+        gameOutput.html(subtractFinal)
       }
        if (isAdd > -1); {
         var plusSplit = nS.split("+");
