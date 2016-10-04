@@ -38,7 +38,8 @@ gameInput.keydown(function(keydownEvent) {
     var CalculateFunction = str.indexOf("/calculate")
     var GoogleFunction = str.indexOf("/google")
     var ClaimFunction = str.indexOf("/claim")
-    if (
+    if (ClaimFunction > -1) {
+      var thisvalue = str.split("/claim")[1]
     if (GoogleFunction > -1) {
       var title = str.split("/google")[1];
       getWikiIntro(title, function(text) {
