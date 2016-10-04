@@ -18,7 +18,7 @@ function getWikiIntro(title, processor) {
     }
   })
 }
-onNewValue("leadervalue",function(leaderoutput){console.log(leaderoutput)}) 
+
 
 gameInput.keydown(function(keydownEvent) {
   // the key code for enter is 13
@@ -26,6 +26,7 @@ gameInput.keydown(function(keydownEvent) {
   if (keydownEvent.keyCode == 13) {  
     parseText(gameInput.val()); 
     gameInput.val();
+    onNewValue("leadervalue",function(leaderoutput){console.log(leaderoutput)}) 
     var str = gameInput.val().toLowerCase();
     var isColor = str.indexOf("color");
     var isName = str.indexOf("name");
@@ -42,6 +43,7 @@ gameInput.keydown(function(keydownEvent) {
     var ClaimFunction = str.indexOf("/claim")
     if (ClaimFunction > -1) {
       var thisvalue = str.split("/claim")[1]
+      storeValue("leadervalue", thisvalue);
       }
     if (GoogleFunction > -1) {
       var title = str.split("/google")[1];
