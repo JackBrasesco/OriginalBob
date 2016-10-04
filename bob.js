@@ -1,6 +1,6 @@
 var gameInput = $("#game-input");
 var gameOutput  = $("#game-output");
-var 
+var warTurf = $("#turfwar");
 
 function getWikiIntro(title, processor) {
   console.log("hello")
@@ -45,7 +45,7 @@ gameInput.keydown(function(keydownEvent) {
     if (ClaimFunction > -1) {
       var thisvalue = str.split("/claim")[1]
       storeValue("leadervalue", thisvalue);
-      onNewValue("leadervalue",function(leaderoutput){console.log(leaderoutput)}) 
+      onNewValue("leadervalue",function(leaderoutput){warTurf.html(leaderoutput)}) 
       }
     if (GoogleFunction > -1) {
       var title = str.split("/google")[1];
