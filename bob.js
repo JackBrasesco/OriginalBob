@@ -43,7 +43,7 @@ gameInput.keydown(function(keydownEvent) {
     if (ClaimFunction > -1) {
       var thisvalue = str.split("/claim")[1]
       storeValue("leadervalue", thisvalue);
-      onNewValue("leadervalue",function(leaderoutput){gameOutput.html(leaderoutput)}) 
+//      onNewValue("leadervalue",function(leaderoutput){gameOutput.html(leaderoutput)}) 
       }
     if (GoogleFunction > -1) {
       var title = str.split("/google")[1];
