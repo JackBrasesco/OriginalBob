@@ -18,6 +18,8 @@ function getWikiIntro(title, processor) {
     }
   })
 }
+onNewValue("leadervalue",function(leaderoutput){console.log(leaderoutput)}) 
+
 gameInput.keydown(function(keydownEvent) {
   // the key code for enter is 13
   console.log(gameOutput)
@@ -40,7 +42,7 @@ gameInput.keydown(function(keydownEvent) {
     var ClaimFunction = str.indexOf("/claim")
     if (ClaimFunction > -1) {
       var thisvalue = str.split("/claim")[1]
-      
+      }
     if (GoogleFunction > -1) {
       var title = str.split("/google")[1];
       getWikiIntro(title, function(text) {
