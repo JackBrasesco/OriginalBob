@@ -26,7 +26,6 @@ gameInput.keydown(function(keydownEvent) {
   if (keydownEvent.keyCode == 13) {  
     parseText(gameInput.val()); 
     gameInput.val();
-    onNewValue("leadervalue",function(leaderoutput){console.log(leaderoutput)}) 
     var str = gameInput.val().toLowerCase();
     var isColor = str.indexOf("color");
     var isName = str.indexOf("name");
@@ -44,6 +43,7 @@ gameInput.keydown(function(keydownEvent) {
     if (ClaimFunction > -1) {
       var thisvalue = str.split("/claim")[1]
       storeValue("leadervalue", thisvalue);
+      onNewValue("leadervalue",function(leaderoutput){gameOutput.html(leaderoutput)}) 
       }
     if (GoogleFunction > -1) {
       var title = str.split("/google")[1];
