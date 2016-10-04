@@ -1,5 +1,7 @@
 var gameInput = $("#game-input");
 var gameOutput  = $("#game-output");
+console.log("hi")
+
 function getWikiIntro(title, processor) {
   console.log("hello")
   $.ajax({
