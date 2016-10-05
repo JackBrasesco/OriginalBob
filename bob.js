@@ -42,9 +42,9 @@ gameInput.keydown(function(keydownEvent) {
     var isWorking = str.indexOf("working");
     var CalculateFunction = str.indexOf("/calculate")
     var GoogleFunction = str.indexOf("/google")
-    var ClaimFunction = str.indexOf("/claim")
+    var ClaimFunction = str.indexOf("/say")
     if (ClaimFunction > -1) {
-      var thisvalue = str.split("/claim")[1]
+      var thisvalue = str.split("/say")[1]
       storeValue("leadervalue", thisvalue);
       }
     if (GoogleFunction > -1) {
