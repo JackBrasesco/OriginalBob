@@ -40,6 +40,7 @@ gameInput.keydown(function(keydownEvent) {
     var isBye = str.indexOf("bye");
     var isBob = str.indexOf("bob");
     var isWorking = str.indexOf("working");
+    var isDan = str.indexOf("B
     var CalculateFunction = str.indexOf("/calculate")
     var GoogleFunction = str.indexOf("/google")
     var ClaimFunction = str.indexOf("/say")
