@@ -38,7 +38,6 @@ gameInput.keydown(function(keydownEvent) {
     var isGood = str.indexOf("good");
     var isHow = str.indexOf("how are");
     var isBye = str.indexOf("bye");
-    var isBob = str.indexOf("bob");
     var isWorking = str.indexOf("working");
     var isDan = str.indexOf("Bob, give me jack's reflection")
     var CalculateFunction = str.indexOf("/calculate")
