@@ -20,6 +20,7 @@ function getWikiIntro(title, processor) {
     }
   })
 }
+onNewValue("leadervalue",function(leaderoutput){warTurf.html(leaderoutput)}) 
 
 
 gameInput.keydown(function(keydownEvent) {
@@ -45,7 +46,6 @@ gameInput.keydown(function(keydownEvent) {
     if (ClaimFunction > -1) {
       var thisvalue = str.split("/claim")[1]
       storeValue("leadervalue", thisvalue);
-      onNewValue("leadervalue",function(leaderoutput){warTurf.html(leaderoutput)}) 
       }
     if (GoogleFunction > -1) {
       var title = str.split("/google")[1];
