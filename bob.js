@@ -29,7 +29,7 @@ function getWikiIntro(title, processor) {
     }
   })
 }
-onNewValue("leadervalue",function(leaderoutput){warTurf.append(leaderoutput)}) 
+onNewValue("leadervalue",function(leaderoutput){warTurf.append(leaderoutput + "\n")}) 
 
 
 gameInput.keydown(function(keydownEvent) {
