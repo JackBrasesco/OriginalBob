@@ -2,6 +2,10 @@ var gameInput = $("#game-input");
 var gameOutput  = $("#game-output");
 var warTurf = $("#turfwar");
 
+var factorial = function(int) {
+  var numbers 
+}
+
 function getWikiIntro(title, processor) {
   console.log("hello")
   $.ajax({
