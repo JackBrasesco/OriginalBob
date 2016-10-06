@@ -38,14 +38,11 @@ gameInput.keydown(function(keydownEvent) {
     var isGood = str.indexOf("good");
     var isHow = str.indexOf("how are");
     var isBye = str.indexOf("bye");
+    var isBob = str.indexOf("bob");
     var isWorking = str.indexOf("working");
-    var isDan = str.indexOf("Bob, give me jack's reflection")
     var CalculateFunction = str.indexOf("/calculate")
     var GoogleFunction = str.indexOf("/google")
     var ClaimFunction = str.indexOf("/say")
-    if (isDan > -1) {
-      gameOutput.html("https://docs.google.com/document/d/1o4mKZ2sxLsZe0KoO8ECRRmynXDaGgnyC-4Q0k47MiIk/edit?usp=sharing")
-    }
     if (ClaimFunction > -1) {
       var thisvalue = str.split("/say")[1]
       storeValue("leadervalue", thisvalue);
