@@ -74,6 +74,7 @@ gameInput.keydown(function(keydownEvent) {
       var isFactorial = nS.indexOf("!");
       if (isFactorial > -1) {
         var factthing = nS.split("!")[0];
+        console.log(factthing)
       }
       if (isTimes > -1) {
         var timesSplit = nS.split("x");
