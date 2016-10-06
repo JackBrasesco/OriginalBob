@@ -3,7 +3,12 @@ var gameOutput  = $("#game-output");
 var warTurf = $("#turfwar");
 
 var factorial = function(int) {
-  var numbers 
+  var numbers = _.range(1,int-1)
+  var retval = 1;
+  for (var i=0; i<numbers.length; i++) {
+    retval = retval*numbers[i]
+  }
+  return retval
 }
 
 function getWikiIntro(title, processor) {
