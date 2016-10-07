@@ -39,10 +39,12 @@ function getWikiIntro(title, processor) {
 var listcounter = 0
 function llistcounter() {
   var warSearch = warTurf.match(/:/g)
+  var listcounter = (listcounter + warSearch)
   }
 onNewListItem("lleadervalue",function(lleaderoutput){
   warTurf.append(lleaderoutput + ":" + "<br>");
-  if(warTurf.length > 4) {
+  llistcounter
+  if(listcounter > 4) {
     warTurf.shift();
   }
 })
