@@ -45,7 +45,7 @@ var listcounter = 0
 var leaderList = []
 onNewListItem("lleadervalue",function(lleaderoutput){
   leaderList.push(lleaderoutput)
-  var lastFour = leaderList.slice(leaderList.length - 4, leaderList.length - 0)  
+  var lastFour = leaderList.slice(leaderList.length - 5, leaderList.length - 0)  
   
   warTurf.html(lastFour.join("<br>"));
 })
