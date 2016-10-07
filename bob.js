@@ -36,6 +36,8 @@ onNewValue("leadervalue",function(leaderoutput){
     chatdissapear.shift();
   }
 }) 
+onNewListItem("leaderlist",function(lleaderoutput){
+}
 
 
 gameInput.keydown(function(keydownEvent) {
