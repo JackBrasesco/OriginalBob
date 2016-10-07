@@ -29,17 +29,19 @@ function getWikiIntro(title, processor) {
     }
   })
 }
-onNewValue("leadervalue",function(leaderoutput){
-  warTurf.append(leaderoutput + ":" + "<br>")
-  var chatdissapear = warTurf.split(":")
-  if(chatdissapear.length > 3){
-    chatdissapear.shift();
-  }
-}) 
+//onNewValue("leadervalue",function(leaderoutput){
+//  warTurf.append(leaderoutput + ":" + "<br>")
+//  var chatdissapear = warTurf.split(":")
+//  if(chatdissapear.length > 3){
+//    chatdissapear.shift();
+//  }
+//}) 
 onNewListItem("leaderlist",function(lleaderoutput){
   warTurf.append(lleaderoutput + ":" + "<br>");
-  if(warTurf.length > 4)
-}
+  if(warTurf.length > 4) {
+    warTurf.shift();
+  }
+})
 
 
 gameInput.keydown(function(keydownEvent) {
