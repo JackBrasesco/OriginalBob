@@ -34,7 +34,6 @@ onNewValue("leadervalue",function(leaderoutput){
   var chatdissapear = warTurf.split(":")
   if(chatdissapear.length > 3){
     chatdissapear.shift();
-    
   }
 }) 
 
