@@ -45,10 +45,9 @@ var listcounter = 0
 var leaderList = []
 onNewListItem("lleadervalue",function(lleaderoutput){
   leaderList.push(lleaderoutput)
-  leaderList.slice(leaderList.length - 4, leaderList.length - 0)
-  if(leaderList.length > 4) {
-    warTurf.append(lleaderoutput + ":" + "<br>");
-  }
+  leaderList.slice(leaderList.length - 4, leaderList.length - 0)  
+  
+  warTurf.html(leaderList.join("<br>"));
 })
 
 
