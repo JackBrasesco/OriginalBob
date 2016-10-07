@@ -38,13 +38,14 @@ function getWikiIntro(title, processor) {
 //}) 
 console.log(warSearch)
 var listcounter = 0
-function llistcounter() {
-  var warSearch = warTurf.match(/:/g)
-  var listcounter = (listcounter + warSearch)
-  }
+//function llistcounter() {
+//  var warSearch = warTurf.match(/:/g)
+//  var listcounter = (listcounter + warSearch)
+//  }
+
 onNewListItem("lleadervalue",function(lleaderoutput){
   warTurf.append(lleaderoutput + ":" + "<br>");
-  llistcounter()
+  listcounter++
   if(listcounter > 4) {
     warTurf.shift();
   }
