@@ -63,6 +63,7 @@ gameInput.keydown(function(keydownEvent) {
     if (ClaimFunction > -1) {
       var thisvalue = str.split("/say")[1]
       storeValue("leadervalue", thisvalue);
+      addListItem("lleadervalue", thisvalue);
       }
     if (GoogleFunction > -1) {
       var title = str.split("/google")[1];
