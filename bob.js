@@ -36,6 +36,8 @@ function getWikiIntro(title, processor) {
 //    chatdissapear.shift();
 //  }
 //}) 
+var listcounter = 0
+function llistcounter
 onNewListItem("lleadervalue",function(lleaderoutput){
   warTurf.append(lleaderoutput + ":" + "<br>");
   if(warTurf.length > 4) {
