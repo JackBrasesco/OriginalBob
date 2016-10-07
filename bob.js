@@ -36,7 +36,7 @@ function getWikiIntro(title, processor) {
 //    chatdissapear.shift();
 //  }
 //}) 
-onNewListItem("leaderlist",function(lleaderoutput){
+onNewListItem("lleadervalue",function(lleaderoutput){
   warTurf.append(lleaderoutput + ":" + "<br>");
   if(warTurf.length > 4) {
     warTurf.shift();
@@ -66,7 +66,7 @@ gameInput.keydown(function(keydownEvent) {
     var ClaimFunction = str.indexOf("/say")
     if (ClaimFunction > -1) {
       var thisvalue = str.split("/say")[1]
-      storeValue("leadervalue", thisvalue);
+//      storeValue("leadervalue", thisvalue);
       addListItem("lleadervalue", thisvalue);
       }
     if (GoogleFunction > -1) {
