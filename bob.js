@@ -37,6 +37,8 @@ onNewValue("leadervalue",function(leaderoutput){
   }
 }) 
 onNewListItem("leaderlist",function(lleaderoutput){
+  warTurf.append(lleaderoutput + ":" + "<br>");
+  if(warTurf.length > 4)
 }
 
 
