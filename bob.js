@@ -37,7 +37,8 @@ function getWikiIntro(title, processor) {
 //  }
 //}) 
 var listcounter = 0
-function llistcounter
+function llistcounter() {
+  var warSearch = warTurf.indexOf(":")
 onNewListItem("lleadervalue",function(lleaderoutput){
   warTurf.append(lleaderoutput + ":" + "<br>");
   if(warTurf.length > 4) {
