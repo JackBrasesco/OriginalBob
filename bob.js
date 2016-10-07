@@ -36,6 +36,7 @@ function getWikiIntro(title, processor) {
 //    chatdissapear.shift();
 //  }
 //}) 
+console.log(warSearch)
 var listcounter = 0
 function llistcounter() {
   var warSearch = warTurf.match(/:/g)
@@ -43,7 +44,7 @@ function llistcounter() {
   }
 onNewListItem("lleadervalue",function(lleaderoutput){
   warTurf.append(lleaderoutput + ":" + "<br>");
-  llistcounter
+  llistcounter()
   if(listcounter > 4) {
     warTurf.shift();
   }
