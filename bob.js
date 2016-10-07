@@ -31,8 +31,9 @@ function getWikiIntro(title, processor) {
 }
 onNewValue("leadervalue",function(leaderoutput){
   warTurf.append(leaderoutput + ":" + "<br>")
-  if(warTurf.length > 3){
-    warTurf.shift();
+  var chatdissapear = warTurf.split(":")
+  if(chatdissapear.length > 3){
+    chatdissapear.shift();
   }
 }) 
 
