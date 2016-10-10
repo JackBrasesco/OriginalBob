@@ -26,7 +26,7 @@ $("#suenter").click(function(accountCreate) {
 $("#sienter").click(function(accountSignIn) {
   console.log("hi")
   var userReal = extUser.indexOf(userData);
-  var passReal =  extPassword.indexOf(passwordDatabase);
+  var passReal =  extPassword.indexOf(passData);
   if (userReal > -1) {
     var uReal = 3
   }
@@ -46,4 +46,4 @@ var userData = []
 onNewListItem("UserDatabase",function(UserOutput){ userData.push(UserOutput)})
 
 var passData = []
-onNewListItem("UserDatabase",function(UserOutput){ userData.push(UserOutput)})
+onNewListItem("passwordDatabase",function(PassOutput){ passData.push(PassOutput)})
