@@ -47,3 +47,5 @@ onNewListItem("UserDatabase",function(UserOutput){ userData.push(UserOutput)})
 
 var passData = []
 onNewListItem("passwordDatabase",function(PassOutput){ passData.push(PassOutput)})
+
+gameOutput.html(userData)
