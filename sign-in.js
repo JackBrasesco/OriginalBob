@@ -5,4 +5,8 @@ $("#signin").click(function() {
 $("#signup").click(function() {
   $(".sustuff").css({display: "inline"});
 })
+
+var newUser = $("#suur");
+
+var
   
