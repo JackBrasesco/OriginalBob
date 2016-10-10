@@ -26,6 +26,11 @@ function storeValue(name, value) {
 
 function onNewValue(name, callback) {	
   store.child("vars").child(name).on("value", function(data) {		
+    {
+      -kajskldfkjlkasjdflkj: "David",
+      -2j3ljalskjdflkjaslkdfj: 
+
+    }
     callback(data.val());
   })
 }
