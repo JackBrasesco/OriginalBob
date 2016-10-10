@@ -34,7 +34,7 @@ $("#sienter").click(function(accountSignIn) {
     var pReal = 4
   }
   else {
-    $("#
+    $("#wrong").css({display: "inline"})
   
   var isLegit = (pReal + uReal)
   if (isLegit = 7) {

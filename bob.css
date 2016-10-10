@@ -173,6 +173,6 @@ h6 {
   top: 450;
   left: -850;
   z-index: 1000;
-  display: inline;
+  display: none;
 }
 
