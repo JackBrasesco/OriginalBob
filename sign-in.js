@@ -14,7 +14,7 @@ $("#suenter").click(function(accountCreate) {
   addListItem("UserDatabase",newUser);
   addListItem("passwordDatabase",newPassword);
   $(".sustuff").css({display: "none"})
-  
-  
 })
+
+
   
