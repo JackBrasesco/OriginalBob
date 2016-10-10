@@ -5,7 +5,6 @@ $("#signin").click(function() {
 $("#signup").click(function() {
   $(".sustuff").css({display: "inline"});
 })
-console.log("Hi")
 var newUser = $("#suur");
 
 var newPassword = $("#supwone");
@@ -21,7 +20,6 @@ var passData = []
 onNewListItem("passwordDatabase",function(PassOutput){ passData.push(PassOutput)})
 
 // This is where accounts are created.
-
 $("#suenter").click(function(accountCreate) {
   addListItem("UserDatabase",newUser);
   addListItem("passwordDatabase",newPassword);
@@ -50,5 +48,6 @@ $("#sienter").click(function(accountSignIn) {
 
 setTimeout(function() {
   gameOutput.html(passData.toString())
+  console.log(user
 }, 2000)
 
