@@ -10,5 +10,5 @@ var newUser = $("#suur");
 
 var newPassword = $("#supwone");
 
-newUser.keydown(function(
+$("#suenter").click(function(UserE
   
