@@ -8,5 +8,7 @@ $("#signup").click(function() {
 
 var newUser = $("#suur");
 
-var
+var newPassword = $("#supwone");
+
+newUser.keydown(function(
   
