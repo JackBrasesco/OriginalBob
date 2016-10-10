@@ -23,9 +23,8 @@ $("#suenter").click(function(accountCreate) {
 })
 
 // This is where you log in
-
 $("#sienter").click(function(accountSignIn) {
-  console.log("hi
+  console.log("hi")
   var userReal = extUser.indexOf(UserDatabase);
   var passReal =  extPassword.indexOf(passwordDatabase);
   if (userReal > -1) {
