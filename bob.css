@@ -173,6 +173,8 @@ h6 {
   position: relative;
   top: 550;
   left: -725;
+  z-index: 100;
+  color:black
 }
 
 
