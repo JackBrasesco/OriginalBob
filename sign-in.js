@@ -1,4 +1,4 @@
-2$("#signin").click(function() {
+$("#signin").click(function() {
   $(".siscreen").css({display: "inline"});
 })
 
