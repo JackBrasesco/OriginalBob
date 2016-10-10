@@ -41,10 +41,5 @@ $("#sienter").click(function(accountSignIn) {
   }
   
 })
-var leaderList = []
-onNewListItem("UserDatabase",function(UserOutput){
-  leaderList.push(UserOutput)
-  var lastFour = leaderList.slice(leaderList.length - 5, leaderList.length - 0)  
-
-  warTurf.html(lastFour.join("<br>"));
-})
+var userData = []
+onNewListItem("UserDatabase",function(UserOutput){ userData.push(UserOutput)})
