@@ -171,6 +171,8 @@ h6 {
 #wrong {
   position: relative;
   top: 450;
-  left: -750;
+  left: -850;
+  z-index: 1000;
+  display: inline;
 }
 
