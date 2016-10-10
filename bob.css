@@ -169,5 +169,8 @@ h6 {
 }
 
 #wrong {
-  
+  position: relative;
+  top: 450;
+  left: -750;
+}
 
