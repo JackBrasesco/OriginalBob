@@ -10,9 +10,9 @@ var newUser = $("#suur");
 
 var newPassword = $("#supwone");
 
-var extUser = $("siun");
+var extUser = $("#siun");
 
-var extPassword = $("sipw");
+var extPassword = $("#sipw");
 
 // This is where accounts are created.
 
@@ -41,3 +41,5 @@ $("#sienter").click(function(accountSignIn) {
   }
   
 })
+
+$("#wrong").css({display: "inline"})
