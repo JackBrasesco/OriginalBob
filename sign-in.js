@@ -14,6 +14,12 @@ var extUser = $("#siun");
 
 var extPassword = $("#sipw");
 
+var userData = []
+onNewListItem("UserDatabase",function(UserOutput){ userData.push(UserOutput)})
+
+var passData = []
+onNewListItem("passwordDatabase",function(PassOutput){ passData.push(PassOutput)})
+
 // This is where accounts are created.
 
 $("#suenter").click(function(accountCreate) {
@@ -42,9 +48,5 @@ $("#sienter").click(function(accountSignIn) {
   
 })
 
-var userData = []
-onNewListItem("UserDatabase",function(UserOutput){ userData.push(UserOutput)})
-
-var passData = []
-onNewListItem("passwordDatabase",function(PassOutput){ passData.push(PassOutput)})
 gameOutput.html(passData)
+
