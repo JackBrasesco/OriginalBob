@@ -5,7 +5,7 @@ $("#signin").click(function() {
 $("#signup").click(function() {
   $(".sustuff").css({display: "inline"});
 })
-
+console.log("Hi")
 var newUser = $("#suur");
 
 var newPassword = $("#supwone");
