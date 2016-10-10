@@ -49,6 +49,6 @@ $("#sienter").click(function(accountSignIn) {
 })
 
 setTimeout(function() {
-  gameOutput.html(passData.toString() + "hgjhgj")
-}, 100)
+  gameOutput.html(passData.toString())
+}, 2000)
 
