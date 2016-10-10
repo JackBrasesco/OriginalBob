@@ -168,13 +168,4 @@ h6 {
   display: none;
 }
 
-#created {
-  font-size: 20;
-  position: relative;
-  top: 550;
-  left: -725;
-  z-index: 100;
-  color:black;
-}
-
 
