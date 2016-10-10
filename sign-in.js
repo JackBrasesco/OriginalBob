@@ -10,9 +10,10 @@ var newUser = $("#suur");
 
 var newPassword = $("#supwone");
 
-$("#suenter").click(function(userEnter) {
+$("#suenter").click(function(accountCreate) {
   addListItem("UserDatabase",newUser);
   addListItem("passwordDatabase",newPassword);
+  $(".sustuff").css({display: "none"})
   
   
 })
