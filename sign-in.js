@@ -10,6 +10,8 @@ var newUser = $("#suur");
 
 var newPassword = $("#supwone");
 
+var extUser = $("siun")
+
 // This is where accounts are created.
 
 $("#suenter").click(function(accountCreate) {
@@ -20,6 +22,10 @@ $("#suenter").click(function(accountCreate) {
 
 // This is where you log in
 
-$("#
+$("#sienter").click(function(accountSignIn) {
+  
+  
+  
+})
 
   
