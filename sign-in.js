@@ -25,8 +25,9 @@ $("#suenter").click(function(accountCreate) {
 // This is where you log in
 
 $("#sienter").click(function(accountSignIn) {
+  console.log("hi
   var userReal = extUser.indexOf(UserDatabase);
-  var passReal = extPassword.indexOf(passwordDatabase);
+  var passReal =  extPassword.indexOf(passwordDatabase);
   if (userReal > -1) {
     var uReal = 3
   }
@@ -35,6 +36,7 @@ $("#sienter").click(function(accountSignIn) {
   }
   else {
     $("#wrong").css({display: "inline"})
+  }
   
   var isLegit = (pReal + uReal)
   if (isLegit = 7) {
