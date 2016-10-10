@@ -11,7 +11,8 @@ var newUser = $("#suur");
 var newPassword = $("#supwone");
 
 $("#suenter").click(function(userEnter) {
-  addListItem("UserDatabase",newUser)
+  addListItem("UserDatabase",newUser);
+  addListItem("passwordDatabase",newPassword);
   
   
 })
