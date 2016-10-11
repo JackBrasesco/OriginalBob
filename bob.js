@@ -59,7 +59,8 @@ gameInput.keydown(function(keydownEvent) {
     gameInput.val();
     var str = gameInput.val().toLowerCase();
     var isJosh = str.indexOf("<script>");
-    
+    if (isJosh > -1) {
+      gameOutput.html("seriously... just fuck off")
     var isColor = str.indexOf("color");
     var isName = str.indexOf("name");
     var isFuck = str.indexOf("fuck");
