@@ -169,6 +169,7 @@ h6 {
 }
 
 #supw {
-  top: 600;
-  left: -1000;
+  position: relative;
+  top: 580;
+  left: -950;
 }
