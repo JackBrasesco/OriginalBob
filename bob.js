@@ -44,6 +44,7 @@ var listcounter = 0
 //  }
 var lleaderList = []
 onNewListItem("lllllleadervalue",function(lleaderoutput){
+  lleaderoutput.replace(/</g, "&lt;").replace(/>/g, "&gt;");
   lleaderList.push(lleaderoutput)
   var lastFour = leaderList.slice(leaderList.length - 5, leaderList.length - 0)  
 
