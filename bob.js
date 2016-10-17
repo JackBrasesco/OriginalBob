@@ -43,7 +43,7 @@ var listcounter = 0
 //  var listcounter = (listcounter + warSearch)
 //  }
 var leaderList = []
-onNewListItem("llllleadervalue",function(lleaderoutput){
+onNewListItem("lllllleadervalue",function(lleaderoutput){
   leaderList.push(lleaderoutput)
   var lastFour = leaderList.slice(leaderList.length - 5, leaderList.length - 0)  
 
@@ -74,7 +74,7 @@ gameInput.keydown(function(keydownEvent) {
     if (ClaimFunction > -1) {
       var thisvalue = str.split("/say")[1]
       //      storeValue("leadervalue", thisvalue);
-      addListItem("llllleadervalue", thisvalue);
+      addListItem("lllllleadervalue", thisvalue);
     }
     if (GoogleFunction > -1) {
       var title = str.split("/google")[1];
