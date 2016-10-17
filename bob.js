@@ -42,10 +42,10 @@ var listcounter = 0
 //  var warSearch = warTurf.match(/:/g)
 //  var listcounter = (listcounter + warSearch)
 //  }
-var lleaderList = []
+var saything = []
 onNewListItem("saylist",function(lleaderoutput){
   var antiJosh = lleaderoutput.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-  lleaderList.push(antiJosh)
+  saything.push(antiJosh)
   var lastFour = leaderList.slice(leaderList.length - 5, leaderList.length - 0)  
 
   warTurf.html(lastFour.join("<br>"));
