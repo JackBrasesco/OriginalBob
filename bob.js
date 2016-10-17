@@ -43,9 +43,9 @@ var listcounter = 0
 //  var listcounter = (listcounter + warSearch)
 //  }
 var lleaderList = []
-onNewListItem("lllllleadervalue",function(lleaderoutput){
-  lleaderoutput.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-  lleaderList.push(lleaderoutput)
+onNewListItem("saylist",function(lleaderoutput){
+  var antiJosh = lleaderoutput.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  lleaderList.push(antiJosh)
   var lastFour = leaderList.slice(leaderList.length - 5, leaderList.length - 0)  
 
   warTurf.html(lastFour.join("<br>"));
@@ -77,7 +77,7 @@ gameInput.keydown(function(keydownEvent) {
       //      storeValue("leadervalue", thisvalue);
 //      var damnitJosh = thisvalue.split("<")[1]
 
-      addListItem("lllllleadervalue", thisvalue);
+      addListItem("saylist", thisvalue);
     }
     if (GoogleFunction > -1) {
       var title = str.split("/google")[1];
