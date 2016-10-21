@@ -11,6 +11,8 @@ var factorial = function(int) {
   return retval
 }
 
+//store.child("saylist").set(null)
+
 function getWikiIntro(title, processor) {
   console.log("hello")
   $.ajax({
