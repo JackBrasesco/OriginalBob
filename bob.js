@@ -12,7 +12,7 @@ var factorial = function(int) {
 }
 
 //store.child("saylist").set(null)
-]function getWikiIntro(title, processor) {
+function getWikiIntro(title, processor) {
   console.log("hello")
   $.ajax({
     method: "GET",
