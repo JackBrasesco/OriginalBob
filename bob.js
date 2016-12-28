@@ -92,7 +92,7 @@ gameInput.keydown(function(keydownEvent) {
     if (CalculateFunction > -1) {
       var nS = str.split("/calculate")[1];
       var isAdd = nS.indexOf("+");
-      var isTimes = nS.indexOf("x");
+      var isTimes = nS.indexOf("*");
       var isMinus = nS.indexOf("-");
       var isDivide = nS.indexOf("/");
       var isFactorial = nS.indexOf("!");
@@ -101,7 +101,7 @@ gameInput.keydown(function(keydownEvent) {
         console.log(factthing)
       }
       if (isTimes > -1) {
-        var timesSplit = nS.split("x");
+        var timesSplit = nS.split("*");
         var oneNumber = parseFloat(timesSplit[0]);
         var twoNumber = parseFloat(timesSplit[1]);
         var multiply = (oneNumber * twoNumber);        
